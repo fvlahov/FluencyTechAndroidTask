@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Fluency task"
 include(":app")
- 
+include(":data")
+include(":domain")
