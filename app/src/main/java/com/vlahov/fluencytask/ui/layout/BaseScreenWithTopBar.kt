@@ -29,6 +29,7 @@ fun BaseScreenWithTopBar(
     title: String,
     onBackClicked: (() -> Unit)?,
     modifier: Modifier = Modifier,
+    bottomBar: @Composable () -> Unit = {},
     horizontalAlignment: Alignment.Horizontal = Alignment.Start,
     verticalArrangement: Arrangement.Vertical = Arrangement.Top,
     floatingActionButton: @Composable () -> Unit = {},
@@ -41,6 +42,7 @@ fun BaseScreenWithTopBar(
         horizontalAlignment = horizontalAlignment,
         verticalArrangement = verticalArrangement,
         background = background,
+        bottomBar = bottomBar,
         topBar = {
             CenterAlignedTopAppBar(
                 title = {

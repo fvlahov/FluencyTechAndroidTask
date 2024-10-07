@@ -17,12 +17,14 @@ fun BaseScreen(
     horizontalAlignment: Alignment.Horizontal = Alignment.Start,
     verticalArrangement: Arrangement.Vertical = Arrangement.Top,
     topBar: @Composable () -> Unit = {},
+    bottomBar: @Composable () -> Unit = {},
     floatingActionButton: @Composable () -> Unit = {},
     background: @Composable () -> Unit = {},
     content: @Composable ColumnScope.() -> Unit,
 ) {
     Scaffold(
         topBar = topBar,
+        bottomBar = bottomBar,
         containerColor = MaterialTheme.colorScheme.background,
         floatingActionButton = floatingActionButton,
     ) { innerPadding ->
