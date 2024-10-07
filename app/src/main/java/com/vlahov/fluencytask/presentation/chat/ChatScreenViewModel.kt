@@ -1,7 +1,7 @@
 package com.vlahov.fluencytask.presentation.chat
 
+import com.vlahov.domain.usecase.ChatUseCase
 import com.vlahov.fluencytask.base.BaseViewModel
-import com.vlahov.fluencytask.service.ChatUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -34,7 +34,7 @@ class ChatScreenViewModel @Inject constructor(
 
     init {
         launchIn {
-            chatUseCase.getMessages().collectLatest { message ->
+            chatUseCase.messages.collectLatest { message ->
                 mutableState.update { it.copy(messages = it.messages + message) }
             }
         }
