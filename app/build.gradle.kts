@@ -68,6 +68,9 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 
+    // Icons extended
+    implementation(libs.icons.extended)
+
     // KotlinX serialization
     implementation(libs.kotlinx.serialization.json)
 
