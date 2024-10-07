@@ -1,5 +1,7 @@
 # Gradle files
 .gradle/
+.idea/
+.kotlin/
 build/
 
 # Local configuration file (sdk path, etc)
