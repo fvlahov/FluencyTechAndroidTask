@@ -15,7 +15,7 @@ import java.util.UUID
 import javax.inject.Inject
 
 
-internal class ChatConnectionUseCaseImpl @Inject constructor(
+class ChatConnectionUseCaseImpl @Inject constructor(
 
 ) : ChatConnectionUseCase {
     private val scope = CoroutineScope(Dispatchers.IO)
