@@ -9,8 +9,6 @@ interface ChatConnectionUseCase {
     val onConnected: SharedFlow<Unit>
     val onLoseConnection: SharedFlow<Unit>
 
-    val errors: SharedFlow<ChatError>
-
     fun onHostConnected(socket: BluetoothSocket)
 
     suspend fun writeData(data: ByteArray)

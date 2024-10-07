@@ -6,7 +6,7 @@ import com.vlahov.domain.usecase.ChatUseCase
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class ChatUseCaseImpl @Inject constructor(
+internal class ChatUseCaseImpl @Inject constructor(
     private val chatConnectionUseCase: ChatConnectionUseCase
 ) : ChatUseCase {
     override val messages: Flow<Message> = chatConnectionUseCase.rawMessages

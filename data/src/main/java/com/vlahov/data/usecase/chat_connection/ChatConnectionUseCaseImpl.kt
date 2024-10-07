@@ -15,7 +15,7 @@ import java.util.UUID
 import javax.inject.Inject
 
 
-class ChatConnectionUseCaseImpl @Inject constructor(
+internal class ChatConnectionUseCaseImpl @Inject constructor(
 
 ) : ChatConnectionUseCase {
     private val scope = CoroutineScope(Dispatchers.IO)
@@ -29,8 +29,6 @@ class ChatConnectionUseCaseImpl @Inject constructor(
     override val onConnected = MutableSharedFlow<Unit>()
 
     override val onLoseConnection = MutableSharedFlow<Unit>(replay = 1, onBufferOverflow = BufferOverflow.DROP_OLDEST)
-
-    override val errors = MutableSharedFlow<ChatError>()
 
     override fun onHostConnected(socket: BluetoothSocket) {
         this.socket = socket
