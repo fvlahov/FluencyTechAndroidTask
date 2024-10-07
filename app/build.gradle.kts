@@ -68,6 +68,9 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 
+    // Permissions
+    implementation(libs.accompanist.permissions)
+
     // Icons extended
     implementation(libs.icons.extended)
 
