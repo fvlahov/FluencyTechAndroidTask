@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Fluency task</string>
+    <string name="connect_to_device">Connect to device</string>
+    <string name="connect_to_chat">Connect to chat</string>
+    <string name="host_chat">Host chat</string>
+    <string name="or">Or</string>
+    <string name="awaiting_connection">Awaiting connection</string>
+    <string name="cancel">Cancel</string>
+    <string name="bluetooth_permission_denied">In order to host a chat, you need to give bluetooth connect permission</string>
+    <string name="chat">Chat</string>
+    <string name="your_message">Your message</string>
+    <string name="send_message">Send message</string>
+    <string name="no_messages_yet">No messages yet.</string>
+    <string name="connection_successful">Connection successful</string>
+    <string name="connection_lost">Connection lost</string>
+    <string name="connection_failed">Connection failed</string>
 </resources>
